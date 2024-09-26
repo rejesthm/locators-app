@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "155376762541",
+    "project_id": "gcci-app-359008",
+    "storage_bucket": "gcci-app-359008.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155376762541:android:194815bd2277c15877d024",
+        "android_client_info": {
+          "package_name": "uk.co.locators"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWZOLkqqV0md2S-GHzZSNoeA9Q0VMSBfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
