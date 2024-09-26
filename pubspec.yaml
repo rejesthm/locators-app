@@ -3,7 +3,7 @@ description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
-publish_to: "none" # Remove this line if you wish to publish to pub.dev
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -25,6 +25,7 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  FirebaseStorage:
   auto_size_text: 3.0.0
   cached_network_image: 3.3.1
   cloud_firestore: 4.17.3
@@ -54,13 +55,11 @@ dependencies:
   google_sign_in_web: 0.12.1
   intl: 0.19.0
   json_path: 0.7.2
-  open_file: ^3.5.4
   page_transition: 2.1.0
   path_provider: 2.1.3
   path_provider_android: 2.2.5
   path_provider_foundation: 2.4.0
   path_provider_platform_interface: 2.1.2
-  pdf: ^3.10.8
   percent_indicator: 4.2.2
   plugin_platform_interface: 2.1.8
   provider: 6.1.2
@@ -99,20 +98,23 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+
 flutter_launcher_icons:
-  android: "launcher_icon"
+  android: 'launcher_icon'
   ios: true
   web:
     generate: true
-  image_path: "assets/images/app_launcher_icon.png"
-  adaptive_icon_background: "#e0e3e7"
-  adaptive_icon_foreground: "assets/images/adaptive_foreground_icon.png"
+  image_path: 'assets/images/app_launcher_icon.png'
+  adaptive_icon_background: '#e0e3e7'
+  adaptive_icon_foreground: 'assets/images/adaptive_foreground_icon.png'
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
 flutter:
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -128,6 +130,8 @@ flutter:
     - assets/rive_animations/
     - assets/pdfs/
 
+
+  
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
@@ -153,3 +157,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+

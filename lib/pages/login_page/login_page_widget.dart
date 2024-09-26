@@ -343,7 +343,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'New User?',
+                          'New User? ',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Inter',
