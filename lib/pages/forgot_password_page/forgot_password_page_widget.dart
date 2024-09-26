@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'forgot_password_page_model.dart';
 export 'forgot_password_page_model.dart';
 
@@ -56,7 +54,7 @@ class _ForgotPasswordPageWidgetState extends State<ForgotPasswordPageWidget> {
                 color: FlutterFlowTheme.of(context).secondaryBackground,
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -71,7 +69,7 @@ class _ForgotPasswordPageWidgetState extends State<ForgotPasswordPageWidget> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 10.0, 0.0),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8.0),
@@ -98,13 +96,13 @@ class _ForgotPasswordPageWidgetState extends State<ForgotPasswordPageWidget> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           32.0, 32.0, 32.0, 32.0),
                       child: Text(
                         'Forgot Password?',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Inter',
-                              color: Color(0xFF77216F),
+                              color: const Color(0xFF77216F),
                               fontSize: 18.0,
                               letterSpacing: 0.0,
                             ),
@@ -112,7 +110,7 @@ class _ForgotPasswordPageWidgetState extends State<ForgotPasswordPageWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 32.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 32.0),
                       child: Text(
                         'Please enter your registered user email and we will send you password reset instructions:',
                         textAlign: TextAlign.center,
@@ -129,7 +127,7 @@ class _ForgotPasswordPageWidgetState extends State<ForgotPasswordPageWidget> {
                       key: _model.formKey,
                       autovalidateMode: AutovalidateMode.always,
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             8.0, 50.0, 8.0, 20.0),
                         child: TextFormField(
                           controller: _model.emailTextController,
@@ -194,13 +192,13 @@ class _ForgotPasswordPageWidgetState extends State<ForgotPasswordPageWidget> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           30.0, 20.0, 30.0, 20.0),
                       child: FFButtonWidget(
                         onPressed: () async {
                           if (_model.emailTextController.text.isEmpty) {
                             ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(
+                              const SnackBar(
                                 content: Text(
                                   'Email required!',
                                 ),
@@ -219,11 +217,11 @@ class _ForgotPasswordPageWidgetState extends State<ForgotPasswordPageWidget> {
                         options: FFButtonOptions(
                           width: double.infinity,
                           height: 50.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 24.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFF77216F),
+                          color: const Color(0xFF77216F),
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
                                     fontFamily: 'Inter',
@@ -232,7 +230,7 @@ class _ForgotPasswordPageWidgetState extends State<ForgotPasswordPageWidget> {
                                     fontWeight: FontWeight.w600,
                                   ),
                           elevation: 3.0,
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Colors.transparent,
                             width: 1.0,
                           ),

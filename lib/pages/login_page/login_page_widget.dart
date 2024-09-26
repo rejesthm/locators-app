@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'login_page_model.dart';
 export 'login_page_model.dart';
 
@@ -65,7 +63,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                     autovalidateMode: AutovalidateMode.disabled,
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -81,7 +79,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 10.0, 0.0),
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(8.0),
@@ -108,7 +106,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 150.0, 8.0, 20.0),
                             child: TextFormField(
                               controller: _model.emailTextController,
@@ -175,7 +173,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 0.0, 8.0, 10.0),
                             child: TextFormField(
                               controller: _model.passwordTextController,
@@ -257,9 +255,9 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(1.0, 0.0),
+                            alignment: const AlignmentDirectional(1.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 10.0, 0.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -282,7 +280,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 30.0, 20.0, 30.0, 20.0),
                             child: FFButtonWidget(
                               onPressed: () async {
@@ -308,11 +306,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                               options: FFButtonOptions(
                                 width: double.infinity,
                                 height: 40.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
-                                color: Color(0xFF77216F),
+                                color: const Color(0xFF77216F),
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
@@ -322,7 +320,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                       fontWeight: FontWeight.w600,
                                     ),
                                 elevation: 3.0,
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
@@ -334,10 +332,10 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       ),
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -351,7 +349,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                   ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               5.0, 0.0, 0.0, 0.0),
                           child: InkWell(
                             splashColor: Colors.transparent,

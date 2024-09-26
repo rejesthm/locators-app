@@ -4,11 +4,8 @@ import '/components/add_sites_menu_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'tasks_page_model.dart';
 export 'tasks_page_model.dart';
 
@@ -53,7 +50,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
           onPressed: () async {
             context.pushNamed('add_task_page');
           },
-          backgroundColor: Color(0xFF77216F),
+          backgroundColor: const Color(0xFF77216F),
           elevation: 8.0,
           child: Icon(
             Icons.add,
@@ -70,18 +67,18 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
               Container(
                 width: double.infinity,
                 height: 200.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFF77216F),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.smile,
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -90,7 +87,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           'Locators',
                           style:
@@ -106,7 +103,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           'support@locators.co.uk',
                           style:
@@ -125,7 +122,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -140,7 +137,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.houzz,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -161,7 +158,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -176,7 +173,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.people,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -197,7 +194,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -212,7 +209,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.list,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -233,7 +230,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -248,7 +245,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.event_note_rounded,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -273,7 +270,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                 color: FlutterFlowTheme.of(context).alternate,
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
                 child: Text(
                   'Options',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -286,14 +283,14 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                       child: FaIcon(
                         FontAwesomeIcons.solidUserCircle,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -313,14 +310,14 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                       child: Icon(
                         Icons.settings_sharp,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -340,7 +337,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -359,7 +356,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.login_sharp,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -390,7 +387,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.menu_sharp,
               color: Color(0xFF77216F),
               size: 30.0,
@@ -403,7 +400,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 5.0, 0.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -425,7 +422,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 2.0,
         ),
@@ -438,22 +435,22 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
               color: FlutterFlowTheme.of(context).secondaryBackground,
             ),
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       height: 50.0,
                       decoration: BoxDecoration(
-                        color: Color(0xFF77216F),
+                        color: const Color(0xFF77216F),
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             10.0, 0.0, 10.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -474,14 +471,14 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                                         insetPadding: EdgeInsets.zero,
                                         backgroundColor: Colors.transparent,
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0)
+                                            const AlignmentDirectional(0.0, 0.0)
                                                 .resolve(
                                                     Directionality.of(context)),
                                         child: GestureDetector(
                                           onTap: () =>
                                               FocusScope.of(dialogContext)
                                                   .unfocus(),
-                                          child: Container(
+                                          child: const SizedBox(
                                             height: 450.0,
                                             width: 350.0,
                                             child: AddSitesMenuWidget(),
@@ -501,9 +498,9 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     8.0, 3.0, 8.0, 3.0),
-                                child: Container(
+                                child: SizedBox(
                                   width: 250.0,
                                   child: TextFormField(
                                     controller: _model.textController,
@@ -563,10 +560,10 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                                       filled: true,
                                       fillColor: FlutterFlowTheme.of(context)
                                           .primaryBackground,
-                                      prefixIcon: Icon(
+                                      prefixIcon: const Icon(
                                         Icons.search_sharp,
                                       ),
-                                      suffixIcon: Icon(
+                                      suffixIcon: const Icon(
                                         Icons.person,
                                       ),
                                     ),
@@ -595,7 +592,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
@@ -657,12 +654,12 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         5.0, 10.0, 5.0, 10.0),
                                     child: Container(
                                       width: double.infinity,
                                       height: 80.0,
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
@@ -714,7 +711,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                                                         .alternate,
                                                   ),
                                                   activeColor:
-                                                      Color(0xFF77216F),
+                                                      const Color(0xFF77216F),
                                                   checkColor:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -738,7 +735,7 @@ class _TasksPageWidgetState extends State<TasksPageWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 0.0, 10.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,

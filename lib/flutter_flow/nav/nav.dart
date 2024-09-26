@@ -1,21 +1,14 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import '/backend/backend.dart';
-import '/backend/schema/structs/index.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
-import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -80,44 +73,44 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? ProjectsPageWidget() : LoginPageWidget(),
+          appStateNotifier.loggedIn ? const ProjectsPageWidget() : const LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? ProjectsPageWidget()
-              : LoginPageWidget(),
+              ? const ProjectsPageWidget()
+              : const LoginPageWidget(),
         ),
         FFRoute(
           name: 'login_page',
           path: '/loginPage',
-          builder: (context, params) => LoginPageWidget(),
+          builder: (context, params) => const LoginPageWidget(),
         ),
         FFRoute(
           name: 'register_page',
           path: '/registerPage',
-          builder: (context, params) => RegisterPageWidget(),
+          builder: (context, params) => const RegisterPageWidget(),
         ),
         FFRoute(
           name: 'forgot_password_page',
           path: '/forgotPasswordPage',
-          builder: (context, params) => ForgotPasswordPageWidget(),
+          builder: (context, params) => const ForgotPasswordPageWidget(),
         ),
         FFRoute(
           name: 'sites_page',
           path: '/sitesPage',
-          builder: (context, params) => SitesPageWidget(),
+          builder: (context, params) => const SitesPageWidget(),
         ),
         FFRoute(
           name: 'contacts_page',
           path: '/contactsPage',
-          builder: (context, params) => ContactsPageWidget(),
+          builder: (context, params) => const ContactsPageWidget(),
         ),
         FFRoute(
           name: 'projects_page',
           path: '/projectsPage',
-          builder: (context, params) => ProjectsPageWidget(),
+          builder: (context, params) => const ProjectsPageWidget(),
         ),
         FFRoute(
           name: 'site_details_page',
@@ -161,22 +154,22 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'add_sites_page',
           path: '/addSitesPage',
-          builder: (context, params) => AddSitesPageWidget(),
+          builder: (context, params) => const AddSitesPageWidget(),
         ),
         FFRoute(
           name: 'tasks_page',
           path: '/tasksPage',
-          builder: (context, params) => TasksPageWidget(),
+          builder: (context, params) => const TasksPageWidget(),
         ),
         FFRoute(
           name: 'add_task_page',
           path: '/addTaskPage',
-          builder: (context, params) => AddTaskPageWidget(),
+          builder: (context, params) => const AddTaskPageWidget(),
         ),
         FFRoute(
           name: 'add_contact_page',
           path: '/addContactPage',
-          builder: (context, params) => AddContactPageWidget(),
+          builder: (context, params) => const AddContactPageWidget(),
         ),
         FFRoute(
           name: 'rackInspectionmodule_page',
@@ -191,12 +184,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'rackInspectionmodule_page02',
           path: '/rackInspectionmodulePage02',
-          builder: (context, params) => RackInspectionmodulePage02Widget(),
+          builder: (context, params) => const RackInspectionmodulePage02Widget(),
         ),
         FFRoute(
           name: 'add_project_page',
           path: '/addProjectPage',
-          builder: (context, params) => AddProjectPageWidget(),
+          builder: (context, params) => const AddProjectPageWidget(),
         ),
         FFRoute(
           name: 'task_details_page',
@@ -214,7 +207,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'add_area_page',
           path: '/addAreaPage',
-          builder: (context, params) => AddAreaPageWidget(),
+          builder: (context, params) => const AddAreaPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -454,7 +447,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

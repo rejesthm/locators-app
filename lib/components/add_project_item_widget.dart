@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'add_project_item_model.dart';
 export 'add_project_item_model.dart';
 
@@ -49,7 +47,7 @@ class _AddProjectItemWidgetState extends State<AddProjectItemWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(10.0),
       child: Container(
         width: double.infinity,
         height: 500.0,
@@ -57,14 +55,14 @@ class _AddProjectItemWidgetState extends State<AddProjectItemWidget> {
           color: FlutterFlowTheme.of(context).secondaryBackground,
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
           child: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
                   child: Text(
                     'Add Item',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -76,7 +74,7 @@ class _AddProjectItemWidgetState extends State<AddProjectItemWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: FlutterFlowRadioButton(
                     options: [
                       'New Quote Item',
@@ -107,7 +105,7 @@ class _AddProjectItemWidgetState extends State<AddProjectItemWidget> {
                             ),
                     buttonPosition: RadioButtonPosition.left,
                     direction: Axis.vertical,
-                    radioButtonColor: Color(0xFF9F2756),
+                    radioButtonColor: const Color(0xFF9F2756),
                     inactiveRadioButtonColor:
                         FlutterFlowTheme.of(context).secondaryText,
                     toggleable: false,
@@ -116,14 +114,14 @@ class _AddProjectItemWidgetState extends State<AddProjectItemWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 35.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 35.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -138,7 +136,7 @@ class _AddProjectItemWidgetState extends State<AddProjectItemWidget> {
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Inter',
-                                  color: Color(0xFF9F2756),
+                                  color: const Color(0xFF9F2756),
                                   fontSize: 18.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
@@ -161,10 +159,10 @@ class _AddProjectItemWidgetState extends State<AddProjectItemWidget> {
                                     elevation: 0,
                                     insetPadding: EdgeInsets.zero,
                                     backgroundColor: Colors.transparent,
-                                    alignment: AlignmentDirectional(0.0, 0.0)
+                                    alignment: const AlignmentDirectional(0.0, 0.0)
                                         .resolve(Directionality.of(context)),
                                     child: SelectQuoteItemProductTypeWidget(
-                                      titlevalue: widget!.titlevalue,
+                                      titlevalue: widget.titlevalue,
                                     ),
                                   );
                                 },
@@ -181,12 +179,12 @@ class _AddProjectItemWidgetState extends State<AddProjectItemWidget> {
                                       elevation: 0,
                                       insetPadding: EdgeInsets.zero,
                                       backgroundColor: Colors.transparent,
-                                      alignment: AlignmentDirectional(0.0, 0.0)
+                                      alignment: const AlignmentDirectional(0.0, 0.0)
                                           .resolve(Directionality.of(context)),
                                       child: BusinessModulesWidget(
                                         projectItemValue:
                                             _model.radioButtonValue!,
-                                        titlevalue: widget!.titlevalue,
+                                        titlevalue: widget.titlevalue,
                                       ),
                                     );
                                   },

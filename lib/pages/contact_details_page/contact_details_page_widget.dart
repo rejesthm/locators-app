@@ -3,11 +3,8 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'contact_details_page_model.dart';
 export 'contact_details_page_model.dart';
 
@@ -55,7 +52,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
           onPressed: () async {
             context.pushNamed('sites_page');
           },
-          backgroundColor: Color(0xFF77216F),
+          backgroundColor: const Color(0xFF77216F),
           elevation: 8.0,
           child: Icon(
             Icons.add,
@@ -72,18 +69,18 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
               Container(
                 width: double.infinity,
                 height: 200.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFF77216F),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.smile,
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -92,7 +89,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           'Locators',
                           style:
@@ -108,7 +105,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           'support@locators.co.uk',
                           style:
@@ -127,7 +124,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -142,7 +139,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.houzz,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -163,7 +160,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -178,7 +175,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.people,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -199,7 +196,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -214,7 +211,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.list,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -235,7 +232,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -250,7 +247,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.event_note_rounded,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -275,7 +272,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                 color: FlutterFlowTheme.of(context).alternate,
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
                 child: Text(
                   'Options',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -288,14 +285,14 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                       child: FaIcon(
                         FontAwesomeIcons.solidUserCircle,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -315,14 +312,14 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                       child: Icon(
                         Icons.settings_sharp,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -342,7 +339,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -361,7 +358,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.login_sharp,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -392,7 +389,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.menu_sharp,
               color: Color(0xFF77216F),
               size: 30.0,
@@ -405,7 +402,7 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 5.0, 0.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -427,412 +424,970 @@ class _ContactDetailsPageWidgetState extends State<ContactDetailsPageWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 2.0,
         ),
         body: SafeArea(
           top: true,
-          child: StreamBuilder<List<ContactlistRecord>>(
-            stream: queryContactlistRecord(
-              singleRecord: true,
-            ),
-            builder: (context, snapshot) {
-              // Customize what your widget looks like when it's loading.
-              if (!snapshot.hasData) {
-                return Center(
-                  child: SizedBox(
-                    width: 50.0,
-                    height: 50.0,
-                    child: CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation<Color>(
-                        FlutterFlowTheme.of(context).primary,
+          child: SafeArea(
+            child: Container(
+              width: double.infinity,
+              height: double.infinity,
+              decoration: const BoxDecoration(),
+              child: SingleChildScrollView(
+                primary: false,
+                child: Column(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Container(
+                        width: double.infinity,
+                        height: 50.0,
+                        decoration: BoxDecoration(
+                          color:
+                              FlutterFlowTheme.of(context).secondaryBackground,
+                          border: Border.all(
+                            color: const Color(0xFF77216F),
+                            width: 2.0,
+                          ),
+                        ),
+                        child: Align(
+                          alignment: const AlignmentDirectional(0.0, 0.0),
+                          child: Text(
+                            widget.contactDetails!.contactName,
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Inter',
+                                  fontSize: 22.0,
+                                  letterSpacing: 0.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                          ),
+                        ),
                       ),
                     ),
-                  ),
-                );
-              }
-              List<ContactlistRecord> containerContactlistRecordList =
-                  snapshot.data!;
-              // Return an empty Container when the item does not exist.
-              if (snapshot.data!.isEmpty) {
-                return Container();
-              }
-              final containerContactlistRecord =
-                  containerContactlistRecordList.isNotEmpty
-                      ? containerContactlistRecordList.first
-                      : null;
-
-              return SafeArea(
-                child: Container(
-                  width: double.infinity,
-                  height: double.infinity,
-                  decoration: BoxDecoration(),
-                  child: SingleChildScrollView(
-                    primary: false,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.all(10.0),
-                          child: Container(
-                            width: double.infinity,
-                            height: 50.0,
-                            decoration: BoxDecoration(
-                              color: FlutterFlowTheme.of(context)
-                                  .secondaryBackground,
-                              border: Border.all(
-                                color: Color(0xFF77216F),
-                                width: 2.0,
+                    SingleChildScrollView(
+                      primary: false,
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                10.0, 0.0, 10.0, 0.0),
+                            child: Container(
+                              width: double.infinity,
+                              decoration: BoxDecoration(
+                                color: FlutterFlowTheme.of(context)
+                                    .secondaryBackground,
+                                border: Border.all(
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
+                                ),
                               ),
-                            ),
-                            child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
-                              child: Text(
-                                widget!.contactDetails!.contactName,
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Inter',
-                                      fontSize: 22.0,
-                                      letterSpacing: 0.0,
-                                      fontWeight: FontWeight.bold,
+                              child: Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 10.0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Icon(
+                                          Icons.person_rounded,
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryText,
+                                          size: 24.0,
+                                        ),
+                                        Text(
+                                          'Contact details',
+                                          style: FlutterFlowTheme.of(context)
+                                              .headlineMedium
+                                              .override(
+                                                fontFamily: 'Readex Pro',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryText,
+                                                fontSize: 22.0,
+                                                letterSpacing: 0.0,
+                                                fontWeight: FontWeight.normal,
+                                              ),
+                                        ),
+                                      ],
                                     ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(5.0),
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Container(
+                                            width: 170.0,
+                                            height: 100.0,
+                                            decoration: const BoxDecoration(),
+                                            child: Column(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  widget.contactDetails!
+                                                      .contactCompany,
+                                                  textAlign: TextAlign.start,
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Inter',
+                                                        fontSize: 15.0,
+                                                        letterSpacing: 0.0,
+                                                      ),
+                                                ),
+                                                Text(
+                                                  widget.contactDetails!
+                                                      .contactPosition,
+                                                  textAlign: TextAlign.start,
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Inter',
+                                                        fontSize: 15.0,
+                                                        letterSpacing: 0.0,
+                                                      ),
+                                                ),
+                                                Text(
+                                                  widget.contactDetails!
+                                                      .contactAddress,
+                                                  textAlign: TextAlign.start,
+                                                  style: FlutterFlowTheme.of(
+                                                          context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Inter',
+                                                        fontSize: 15.0,
+                                                        letterSpacing: 0.0,
+                                                      ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            height: 100.0,
+                                            child: VerticalDivider(
+                                              thickness: 1.0,
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryText,
+                                            ),
+                                          ),
+                                          Container(
+                                            width: 170.0,
+                                            height: 100.0,
+                                            decoration: const BoxDecoration(),
+                                            child: Column(
+                                              mainAxisSize: MainAxisSize.max,
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Container(
+                                                  width: 150.0,
+                                                  height: 25.0,
+                                                  decoration: const BoxDecoration(),
+                                                  child: Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .spaceBetween,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .center,
+                                                    children: [
+                                                      Align(
+                                                        alignment:
+                                                            const AlignmentDirectional(
+                                                                -1.0, 0.0),
+                                                        child: Icon(
+                                                          Icons.phone_sharp,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primaryText,
+                                                          size: 24.0,
+                                                        ),
+                                                      ),
+                                                      Align(
+                                                        alignment:
+                                                            const AlignmentDirectional(
+                                                                0.0, 0.0),
+                                                        child: Text(
+                                                          widget
+                                                              .contactDetails!
+                                                              .contactPhone,
+                                                          textAlign:
+                                                              TextAlign.end,
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .headlineMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Readex Pro',
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primaryText,
+                                                                fontSize: 16.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .normal,
+                                                              ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                Container(
+                                                  width: 150.0,
+                                                  height: 25.0,
+                                                  decoration: const BoxDecoration(),
+                                                  child: Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .spaceBetween,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .center,
+                                                    children: [
+                                                      Align(
+                                                        alignment:
+                                                            const AlignmentDirectional(
+                                                                -1.0, 0.0),
+                                                        child: FaIcon(
+                                                          FontAwesomeIcons
+                                                              .mobileAlt,
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primaryText,
+                                                          size: 24.0,
+                                                        ),
+                                                      ),
+                                                      Align(
+                                                        alignment:
+                                                            const AlignmentDirectional(
+                                                                0.0, 0.0),
+                                                        child: Text(
+                                                          widget
+                                                              .contactDetails!
+                                                              .contactMobile,
+                                                          textAlign:
+                                                              TextAlign.end,
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .headlineMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Readex Pro',
+                                                                color: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .primaryText,
+                                                                fontSize: 16.0,
+                                                                letterSpacing:
+                                                                    0.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .normal,
+                                                              ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                                Align(
+                                                  alignment:
+                                                      const AlignmentDirectional(
+                                                          -1.0, 0.0),
+                                                  child: Container(
+                                                    width: 150.0,
+                                                    height: 25.0,
+                                                    decoration: const BoxDecoration(),
+                                                    child: Row(
+                                                      mainAxisSize:
+                                                          MainAxisSize.max,
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .spaceBetween,
+                                                      crossAxisAlignment:
+                                                          CrossAxisAlignment
+                                                              .center,
+                                                      children: [
+                                                        Align(
+                                                          alignment:
+                                                              const AlignmentDirectional(
+                                                                  -1.0, 0.0),
+                                                          child: Icon(
+                                                            Icons.mail,
+                                                            color: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .primaryText,
+                                                            size: 24.0,
+                                                          ),
+                                                        ),
+                                                        Align(
+                                                          alignment:
+                                                              const AlignmentDirectional(
+                                                                  0.0, 0.0),
+                                                          child: Text(
+                                                            widget
+                                                                .contactDetails!
+                                                                .contactEmail,
+                                                            textAlign:
+                                                                TextAlign.end,
+                                                            maxLines: 3,
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .headlineMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Readex Pro',
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primaryText,
+                                                                  fontSize:
+                                                                      12.0,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .normal,
+                                                                ),
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Container(
+                        width: double.infinity,
+                        height: 230.0,
+                        decoration: BoxDecoration(
+                          color:
+                              FlutterFlowTheme.of(context).secondaryBackground,
+                          border: Border.all(
+                            color: FlutterFlowTheme.of(context).primaryText,
+                          ),
                         ),
-                        SingleChildScrollView(
+                        child: SingleChildScrollView(
                           primary: false,
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    10.0, 0.0, 10.0, 0.0),
-                                child: Container(
-                                  width: double.infinity,
-                                  decoration: BoxDecoration(
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    border: Border.all(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 10.0, 0.0, 10.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Align(
+                                      alignment:
+                                          const AlignmentDirectional(0.0, -1.0),
+                                      child: FaIcon(
+                                        FontAwesomeIcons.houzz,
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        size: 24.0,
+                                      ),
                                     ),
-                                  ),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 0.0, 0.0, 10.0),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      children: [
-                                        Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: [
-                                            Icon(
-                                              Icons.person_rounded,
+                                    Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          10.0, 0.0, 0.0, 0.0),
+                                      child: Text(
+                                        'Sites',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Inter',
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .secondaryText,
-                                              size: 24.0,
-                                            ),
-                                            Text(
-                                              'Contact details',
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .headlineMedium
-                                                  .override(
-                                                    fontFamily: 'Readex Pro',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
-                                                    fontSize: 22.0,
-                                                    letterSpacing: 0.0,
-                                                    fontWeight:
-                                                        FontWeight.normal,
-                                                  ),
-                                            ),
-                                          ],
-                                        ),
-                                        Padding(
-                                          padding: EdgeInsets.all(5.0),
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            children: [
-                                              Container(
-                                                width: 170.0,
-                                                height: 100.0,
-                                                decoration: BoxDecoration(),
-                                                child: Column(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment
-                                                          .spaceBetween,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    Text(
-                                                      widget!.contactDetails!
-                                                          .contactCompany,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily: 'Inter',
-                                                            fontSize: 15.0,
-                                                            letterSpacing: 0.0,
-                                                          ),
-                                                    ),
-                                                    Text(
-                                                      widget!.contactDetails!
-                                                          .contactPosition,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily: 'Inter',
-                                                            fontSize: 15.0,
-                                                            letterSpacing: 0.0,
-                                                          ),
-                                                    ),
-                                                    Text(
-                                                      widget!.contactDetails!
-                                                          .contactAddress,
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily: 'Inter',
-                                                            fontSize: 15.0,
-                                                            letterSpacing: 0.0,
-                                                          ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              SizedBox(
-                                                height: 100.0,
-                                                child: VerticalDivider(
-                                                  thickness: 1.0,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
                                                       .primaryText,
-                                                ),
-                                              ),
-                                              Container(
-                                                width: 170.0,
-                                                height: 100.0,
-                                                decoration: BoxDecoration(),
-                                                child: Column(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment
-                                                          .spaceBetween,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    Container(
-                                                      width: 150.0,
-                                                      height: 25.0,
-                                                      decoration:
-                                                          BoxDecoration(),
-                                                      child: Row(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .spaceBetween,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .center,
-                                                        children: [
-                                                          Align(
-                                                            alignment:
-                                                                AlignmentDirectional(
-                                                                    -1.0, 0.0),
-                                                            child: Icon(
-                                                              Icons.phone_sharp,
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primaryText,
-                                                              size: 24.0,
-                                                            ),
-                                                          ),
-                                                          Align(
-                                                            alignment:
-                                                                AlignmentDirectional(
-                                                                    0.0, 0.0),
-                                                            child: Text(
-                                                              widget!
-                                                                  .contactDetails!
-                                                                  .contactPhone,
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .headlineMedium
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        'Readex Pro',
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primaryText,
-                                                                    fontSize:
-                                                                        16.0,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .normal,
-                                                                  ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                    Container(
-                                                      width: 150.0,
-                                                      height: 25.0,
-                                                      decoration:
-                                                          BoxDecoration(),
-                                                      child: Row(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .spaceBetween,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .center,
-                                                        children: [
-                                                          Align(
-                                                            alignment:
-                                                                AlignmentDirectional(
-                                                                    -1.0, 0.0),
-                                                            child: FaIcon(
-                                                              FontAwesomeIcons
-                                                                  .mobileAlt,
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .primaryText,
-                                                              size: 24.0,
-                                                            ),
-                                                          ),
-                                                          Align(
-                                                            alignment:
-                                                                AlignmentDirectional(
-                                                                    0.0, 0.0),
-                                                            child: Text(
-                                                              widget!
-                                                                  .contactDetails!
-                                                                  .contactMobile,
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .headlineMedium
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        'Readex Pro',
-                                                                    color: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .primaryText,
-                                                                    fontSize:
-                                                                        16.0,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .normal,
-                                                                  ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                    Align(
-                                                      alignment:
-                                                          AlignmentDirectional(
-                                                              -1.0, 0.0),
-                                                      child: Container(
-                                                        width: 150.0,
-                                                        height: 25.0,
-                                                        decoration:
-                                                            BoxDecoration(),
-                                                        child: Row(
-                                                          mainAxisSize:
-                                                              MainAxisSize.max,
-                                                          mainAxisAlignment:
-                                                              MainAxisAlignment
-                                                                  .spaceBetween,
-                                                          crossAxisAlignment:
-                                                              CrossAxisAlignment
-                                                                  .center,
-                                                          children: [
-                                                            Align(
-                                                              alignment:
-                                                                  AlignmentDirectional(
-                                                                      -1.0,
-                                                                      0.0),
-                                                              child: Icon(
-                                                                Icons.mail,
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primaryText,
-                                                                size: 24.0,
-                                                              ),
-                                                            ),
-                                                            Align(
-                                                              alignment:
-                                                                  AlignmentDirectional(
-                                                                      0.0, 0.0),
-                                                              child: Text(
-                                                                widget!
-                                                                    .contactDetails!
-                                                                    .contactEmail,
-                                                                style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .headlineMedium
-                                                                    .override(
-                                                                      fontFamily:
-                                                                          'Readex Pro',
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .primaryText,
-                                                                      fontSize:
-                                                                          12.0,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .normal,
-                                                                    ),
-                                                              ),
-                                                            ),
-                                                          ],
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                            ],
+                                              fontSize: 18.0,
+                                              letterSpacing: 0.0,
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              StreamBuilder<List<SitesRecord>>(
+                                stream: querySitesRecord(),
+                                builder: (context, snapshot) {
+                                  // Customize what your widget looks like when it's loading.
+                                  if (!snapshot.hasData) {
+                                    return Center(
+                                      child: SizedBox(
+                                        width: 50.0,
+                                        height: 50.0,
+                                        child: CircularProgressIndicator(
+                                          valueColor:
+                                              AlwaysStoppedAnimation<Color>(
+                                            FlutterFlowTheme.of(context)
+                                                .primary,
                                           ),
                                         ),
-                                      ],
+                                      ),
+                                    );
+                                  }
+                                  List<SitesRecord> listViewSitesRecordList =
+                                      snapshot.data!;
+
+                                  return ListView.builder(
+                                    padding: EdgeInsets.zero,
+                                    shrinkWrap: true,
+                                    scrollDirection: Axis.vertical,
+                                    itemCount: listViewSitesRecordList.length,
+                                    itemBuilder: (context, listViewIndex) {
+                                      final listViewSitesRecord =
+                                          listViewSitesRecordList[
+                                              listViewIndex];
+                                      return Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            5.0, 0.0, 5.0, 5.0),
+                                        child: Card(
+                                          clipBehavior:
+                                              Clip.antiAliasWithSaveLayer,
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                          elevation: 4.0,
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(0.0),
+                                          ),
+                                          child: Container(
+                                            width: double.infinity,
+                                            height: 50.0,
+                                            decoration: BoxDecoration(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      10.0, 0.0, 10.0, 0.0),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment
+                                                        .spaceBetween,
+                                                children: [
+                                                  Text(
+                                                    listViewSitesRecord
+                                                        .siteReference,
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          fontSize: 18.0,
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                        ),
+                                                  ),
+                                                  Container(
+                                                    width: 150.0,
+                                                    height: 30.0,
+                                                    decoration: BoxDecoration(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              50.0),
+                                                      shape: BoxShape.rectangle,
+                                                    ),
+                                                    child: Align(
+                                                      alignment:
+                                                          const AlignmentDirectional(
+                                                              -1.0, 0.0),
+                                                      child: Text(
+                                                        listViewSitesRecord
+                                                            .siteAddress,
+                                                        style: FlutterFlowTheme
+                                                                .of(context)
+                                                            .bodyMedium
+                                                            .override(
+                                                              fontFamily:
+                                                                  'Inter',
+                                                              fontSize: 12.0,
+                                                              letterSpacing:
+                                                                  0.0,
+                                                            ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  );
+                                },
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Container(
+                        width: double.infinity,
+                        height: 200.0,
+                        decoration: BoxDecoration(
+                          color:
+                              FlutterFlowTheme.of(context).secondaryBackground,
+                          border: Border.all(
+                            color: FlutterFlowTheme.of(context).primaryText,
+                          ),
+                        ),
+                        child: SingleChildScrollView(
+                          primary: false,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 10.0, 0.0, 10.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Align(
+                                      alignment:
+                                          const AlignmentDirectional(0.0, -1.0),
+                                      child: Icon(
+                                        Icons.format_list_bulleted,
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        size: 24.0,
+                                      ),
                                     ),
-                                  ),
+                                    Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          10.0, 0.0, 0.0, 0.0),
+                                      child: Text(
+                                        'Projects',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Inter',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryText,
+                                              fontSize: 18.0,
+                                              letterSpacing: 0.0,
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              StreamBuilder<List<ProjectsRecord>>(
+                                stream: queryProjectsRecord(),
+                                builder: (context, snapshot) {
+                                  // Customize what your widget looks like when it's loading.
+                                  if (!snapshot.hasData) {
+                                    return Center(
+                                      child: SizedBox(
+                                        width: 50.0,
+                                        height: 50.0,
+                                        child: CircularProgressIndicator(
+                                          valueColor:
+                                              AlwaysStoppedAnimation<Color>(
+                                            FlutterFlowTheme.of(context)
+                                                .primary,
+                                          ),
+                                        ),
+                                      ),
+                                    );
+                                  }
+                                  List<ProjectsRecord>
+                                      listViewProjectsRecordList =
+                                      snapshot.data!;
+
+                                  return ListView.builder(
+                                    padding: EdgeInsets.zero,
+                                    shrinkWrap: true,
+                                    scrollDirection: Axis.vertical,
+                                    itemCount:
+                                        listViewProjectsRecordList.length,
+                                    itemBuilder: (context, listViewIndex) {
+                                      final listViewProjectsRecord =
+                                          listViewProjectsRecordList[
+                                              listViewIndex];
+                                      return Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            5.0, 0.0, 5.0, 5.0),
+                                        child: Card(
+                                          clipBehavior:
+                                              Clip.antiAliasWithSaveLayer,
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                          elevation: 4.0,
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(0.0),
+                                          ),
+                                          child: Container(
+                                            width: double.infinity,
+                                            height: 50.0,
+                                            decoration: BoxDecoration(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      10.0, 0.0, 10.0, 0.0),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment
+                                                        .spaceBetween,
+                                                children: [
+                                                  Text(
+                                                    listViewProjectsRecord
+                                                        .projectTitle,
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          fontSize: 18.0,
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                        ),
+                                                  ),
+                                                  Container(
+                                                    width: 150.0,
+                                                    height: 30.0,
+                                                    decoration: BoxDecoration(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              50.0),
+                                                      shape: BoxShape.rectangle,
+                                                    ),
+                                                    child: Align(
+                                                      alignment:
+                                                          const AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Text(
+                                                        listViewProjectsRecord
+                                                            .projectDescription,
+                                                        style: FlutterFlowTheme
+                                                                .of(context)
+                                                            .bodyMedium
+                                                            .override(
+                                                              fontFamily:
+                                                                  'Inter',
+                                                              fontSize: 12.0,
+                                                              letterSpacing:
+                                                                  0.0,
+                                                            ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  );
+                                },
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Container(
+                        width: double.infinity,
+                        height: 230.0,
+                        decoration: BoxDecoration(
+                          color:
+                              FlutterFlowTheme.of(context).secondaryBackground,
+                          border: Border.all(
+                            color: FlutterFlowTheme.of(context).primaryText,
+                          ),
+                        ),
+                        child: SingleChildScrollView(
+                          primary: false,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 10.0, 0.0, 10.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Align(
+                                      alignment:
+                                          const AlignmentDirectional(0.0, -1.0),
+                                      child: Icon(
+                                        Icons.event_note_rounded,
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        size: 24.0,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          10.0, 0.0, 0.0, 0.0),
+                                      child: Text(
+                                        'Task',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Inter',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryText,
+                                              fontSize: 18.0,
+                                              letterSpacing: 0.0,
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              StreamBuilder<List<TasksRecord>>(
+                                stream: queryTasksRecord(),
+                                builder: (context, snapshot) {
+                                  // Customize what your widget looks like when it's loading.
+                                  if (!snapshot.hasData) {
+                                    return Center(
+                                      child: SizedBox(
+                                        width: 50.0,
+                                        height: 50.0,
+                                        child: CircularProgressIndicator(
+                                          valueColor:
+                                              AlwaysStoppedAnimation<Color>(
+                                            FlutterFlowTheme.of(context)
+                                                .primary,
+                                          ),
+                                        ),
+                                      ),
+                                    );
+                                  }
+                                  List<TasksRecord> listViewTasksRecordList =
+                                      snapshot.data!;
+
+                                  return ListView.builder(
+                                    padding: EdgeInsets.zero,
+                                    shrinkWrap: true,
+                                    scrollDirection: Axis.vertical,
+                                    itemCount: listViewTasksRecordList.length,
+                                    itemBuilder: (context, listViewIndex) {
+                                      final listViewTasksRecord =
+                                          listViewTasksRecordList[
+                                              listViewIndex];
+                                      return Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            5.0, 0.0, 5.0, 5.0),
+                                        child: Card(
+                                          clipBehavior:
+                                              Clip.antiAliasWithSaveLayer,
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryBackground,
+                                          elevation: 4.0,
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(0.0),
+                                          ),
+                                          child: Container(
+                                            width: double.infinity,
+                                            height: 50.0,
+                                            decoration: BoxDecoration(
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .secondaryBackground,
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      10.0, 0.0, 10.0, 0.0),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment
+                                                        .spaceBetween,
+                                                children: [
+                                                  Text(
+                                                    listViewTasksRecord
+                                                        .taskTitle,
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          fontSize: 18.0,
+                                                          letterSpacing: 0.0,
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                        ),
+                                                  ),
+                                                  Container(
+                                                    width: 150.0,
+                                                    height: 30.0,
+                                                    decoration: BoxDecoration(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              50.0),
+                                                      shape: BoxShape.rectangle,
+                                                    ),
+                                                    child: Align(
+                                                      alignment:
+                                                          const AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Text(
+                                                        listViewTasksRecord
+                                                            .taskDetails,
+                                                        style: FlutterFlowTheme
+                                                                .of(context)
+                                                            .bodyMedium
+                                                            .override(
+                                                              fontFamily:
+                                                                  'Inter',
+                                                              fontSize: 12.0,
+                                                              letterSpacing:
+                                                                  0.0,
+                                                            ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  );
+                                },
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Container(
+                        width: double.infinity,
+                        height: 230.0,
+                        decoration: BoxDecoration(
+                          color:
+                              FlutterFlowTheme.of(context).secondaryBackground,
+                          border: Border.all(
+                            color: FlutterFlowTheme.of(context).primaryText,
+                          ),
+                        ),
+                        child: SingleChildScrollView(
+                          primary: false,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 10.0, 0.0, 10.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Align(
+                                      alignment:
+                                          const AlignmentDirectional(0.0, -1.0),
+                                      child: Icon(
+                                        Icons.note,
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        size: 24.0,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          10.0, 0.0, 0.0, 0.0),
+                                      child: Text(
+                                        'Notes',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodyMedium
+                                            .override(
+                                              fontFamily: 'Inter',
+                                              color:
+                                                  FlutterFlowTheme.of(context)
+                                                      .primaryText,
+                                              fontSize: 18.0,
+                                              letterSpacing: 0.0,
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
                           ),
                         ),
-                      ],
+                      ),
                     ),
-                  ),
+                  ],
                 ),
-              );
-            },
+              ),
+            ),
           ),
         ),
       ),

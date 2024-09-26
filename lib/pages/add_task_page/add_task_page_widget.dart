@@ -4,11 +4,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'add_task_page_model.dart';
 export 'add_task_page_model.dart';
 
@@ -62,18 +59,18 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
               Container(
                 width: double.infinity,
                 height: 200.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFF77216F),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.smile,
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -82,7 +79,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           'Locators',
                           style:
@@ -98,7 +95,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           'support@locators.co.uk',
                           style:
@@ -117,7 +114,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -132,7 +129,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.houzz,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -153,7 +150,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -168,7 +165,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.people,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -189,7 +186,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -204,7 +201,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.list,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -225,7 +222,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -240,7 +237,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.event_note_rounded,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -265,7 +262,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                 color: FlutterFlowTheme.of(context).alternate,
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
                 child: Text(
                   'Options',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -278,14 +275,14 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                       child: FaIcon(
                         FontAwesomeIcons.solidUserCircle,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -305,14 +302,14 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                       child: Icon(
                         Icons.settings_sharp,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -332,7 +329,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -351,7 +348,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.login_sharp,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -382,7 +379,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.menu_sharp,
               color: Color(0xFF77216F),
               size: 30.0,
@@ -395,7 +392,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -417,7 +414,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 2.0,
         ),
@@ -427,7 +424,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
             child: Container(
               width: double.infinity,
               height: double.infinity,
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
               child: Form(
                 key: _model.formKey,
                 autovalidateMode: AutovalidateMode.disabled,
@@ -437,16 +434,16 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 10.0, 10.0, 0.0),
                           child: Container(
                             width: double.infinity,
                             height: 50.0,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: TextFormField(
                                 controller: _model.taskTitleTextController,
                                 focusNode: _model.taskTitleFocusNode,
@@ -478,7 +475,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                                     borderRadius: BorderRadius.circular(0.0),
                                   ),
                                   focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -527,14 +524,14 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 10.0, 16.0, 10.0),
                         child: SingleChildScrollView(
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 10.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -547,7 +544,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                                       size: 24.0,
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         'Task Description',
@@ -568,8 +565,8 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.0, -1.0),
-                                child: Container(
+                                alignment: const AlignmentDirectional(-1.0, -1.0),
+                                child: SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller:
@@ -602,7 +599,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                                             BorderRadius.circular(0.0),
                                       ),
                                       focusedBorder: UnderlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -645,7 +642,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 20.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -658,7 +655,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                                       size: 24.0,
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 12.0, 0.0),
                                       child: Text(
                                         'Task Priority',
@@ -672,15 +669,15 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(1.0, 0.0),
+                                      alignment: const AlignmentDirectional(1.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             150.0, 0.0, 0.0, 0.0),
                                         child: Switch.adaptive(
                                           value: _model.taskPriorityValue!,
                                           onChanged: (newValue) async {
                                             safeSetState(() => _model
-                                                .taskPriorityValue = newValue!);
+                                                .taskPriorityValue = newValue);
                                           },
                                           activeColor:
                                               FlutterFlowTheme.of(context)
@@ -701,7 +698,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 20.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -714,7 +711,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                                       size: 24.0,
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 12.0, 0.0),
                                       child: Text(
                                         'Task Completed',
@@ -728,7 +725,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           140.0, 0.0, 0.0, 0.0),
                                       child: Theme(
                                         data: ThemeData(
@@ -744,7 +741,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                                             ),
                                           ),
                                           unselectedWidgetColor:
-                                              Color(0xFF77216F),
+                                              const Color(0xFF77216F),
                                         ),
                                         child: Checkbox(
                                           value: _model.taskCompletedValue ??=
@@ -754,11 +751,11 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                                                 _model.taskCompletedValue =
                                                     newValue!);
                                           },
-                                          side: BorderSide(
+                                          side: const BorderSide(
                                             width: 2,
                                             color: Color(0xFF77216F),
                                           ),
-                                          activeColor: Color(0xFF77216F),
+                                          activeColor: const Color(0xFF77216F),
                                           checkColor:
                                               FlutterFlowTheme.of(context).info,
                                         ),
@@ -772,7 +769,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             30.0, 20.0, 30.0, 20.0),
                         child: FFButtonWidget(
                           onPressed: () async {
@@ -797,11 +794,11 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                           options: FFButtonOptions(
                             width: double.infinity,
                             height: 50.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: Color(0xFF77216F),
+                            color: const Color(0xFF77216F),
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
@@ -811,7 +808,7 @@ class _AddTaskPageWidgetState extends State<AddTaskPageWidget> {
                                   fontWeight: FontWeight.w600,
                                 ),
                             elevation: 3.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),

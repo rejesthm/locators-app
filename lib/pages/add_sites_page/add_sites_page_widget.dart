@@ -4,11 +4,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'add_sites_page_model.dart';
 export 'add_sites_page_model.dart';
 
@@ -85,18 +82,18 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
               Container(
                 width: double.infinity,
                 height: 200.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFF77216F),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.smile,
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -105,7 +102,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           'Locators',
                           style:
@@ -121,7 +118,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           'support@locators.co.uk',
                           style:
@@ -140,7 +137,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -155,7 +152,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.houzz,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -176,7 +173,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -191,7 +188,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.people,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -212,7 +209,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -227,7 +224,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.list,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -248,7 +245,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -263,7 +260,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.event_note_rounded,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -288,7 +285,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                 color: FlutterFlowTheme.of(context).alternate,
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
                 child: Text(
                   'Options',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -301,14 +298,14 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                       child: FaIcon(
                         FontAwesomeIcons.solidUserCircle,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -328,14 +325,14 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                       child: Icon(
                         Icons.settings_sharp,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -355,7 +352,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -374,7 +371,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.login_sharp,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -405,7 +402,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.menu_sharp,
               color: Color(0xFF77216F),
               size: 30.0,
@@ -418,7 +415,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -440,7 +437,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 2.0,
         ),
@@ -450,7 +447,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
             child: Container(
               width: double.infinity,
               height: double.infinity,
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
               child: Form(
                 key: _model.formKey,
                 autovalidateMode: AutovalidateMode.always,
@@ -460,14 +457,14 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             10.0, 10.0, 10.0, 10.0),
-                        child: Container(
+                        child: SizedBox(
                           width: double.infinity,
                           height: 50.0,
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
-                            child: Container(
+                            alignment: const AlignmentDirectional(0.0, 0.0),
+                            child: SizedBox(
                               width: double.infinity,
                               child: TextFormField(
                                 controller: _model.siteReferenceTextController,
@@ -500,21 +497,21 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                     borderRadius: BorderRadius.circular(0.0),
                                   ),
                                   focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(0.0),
                                   ),
                                   errorBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
                                     borderRadius: BorderRadius.circular(0.0),
                                   ),
                                   focusedErrorBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -548,7 +545,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             8.0, 10.0, 8.0, 10.0),
                         child: Container(
                           width: double.infinity,
@@ -560,7 +557,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsets.all(5.0),
+                                padding: const EdgeInsets.all(5.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -568,7 +565,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                   children: [
                                     Container(
                                       width: 175.0,
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         crossAxisAlignment:
@@ -587,7 +584,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                                 size: 24.0,
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         10.0, 0.0, 0.0, 0.0),
                                                 child: Text(
@@ -611,10 +608,10 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                               ),
                                             ],
                                           ),
-                                          Container(
+                                          SizedBox(
                                             width: 170.0,
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, -1.0),
                                               child: TextFormField(
                                                 controller: _model
@@ -673,8 +670,8 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
-                                            child: Container(
+                                                const AlignmentDirectional(0.0, 0.0),
+                                            child: SizedBox(
                                               width: 200.0,
                                               child: TextFormField(
                                                 controller: _model
@@ -718,7 +715,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                                   ),
                                                   focusedBorder:
                                                       UnderlineInputBorder(
-                                                    borderSide: BorderSide(
+                                                    borderSide: const BorderSide(
                                                       color: Color(0x00000000),
                                                       width: 1.0,
                                                     ),
@@ -784,12 +781,12 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 10.0, 0.0, 0.0),
-                                              child: Container(
+                                              child: SizedBox(
                                                 width: 200.0,
                                                 child: TextFormField(
                                                   controller: _model
@@ -831,7 +828,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                                     ),
                                                     focusedBorder:
                                                         UnderlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -908,10 +905,10 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                       ),
                                     ),
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Container(
                                         width: 175.0,
-                                        decoration: BoxDecoration(),
+                                        decoration: const BoxDecoration(),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           mainAxisAlignment:
@@ -932,7 +929,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                                   size: 24.0,
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           10.0, 0.0, 0.0, 0.0),
                                                   child: Text(
@@ -957,10 +954,10 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                             ),
                                             Container(
                                               width: 170.0,
-                                              decoration: BoxDecoration(),
+                                              decoration: const BoxDecoration(),
                                             ),
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   -1.0, -1.0),
                                               child: TextFormField(
                                                 controller: _model
@@ -1025,9 +1022,9 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                                       .primaryText,
                                             ),
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
-                                              child: Container(
+                                              child: SizedBox(
                                                 width: 200.0,
                                                 child: TextFormField(
                                                   controller: _model
@@ -1069,7 +1066,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                                     ),
                                                     focusedBorder:
                                                         UnderlineInputBorder(
-                                                      borderSide: BorderSide(
+                                                      borderSide: const BorderSide(
                                                         color:
                                                             Color(0x00000000),
                                                         width: 1.0,
@@ -1136,13 +1133,13 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                               ),
                                             ),
                                             Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 0.0),
-                                                child: Container(
+                                                child: SizedBox(
                                                   width: 200.0,
                                                   child: TextFormField(
                                                     controller: _model
@@ -1189,7 +1186,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                                       ),
                                                       focusedBorder:
                                                           UnderlineInputBorder(
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color:
                                                               Color(0x00000000),
                                                           width: 1.0,
@@ -1260,20 +1257,20 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 10.0, 10.0, 0.0),
                                   child: Container(
                                     width: double.infinity,
                                     height: 50.0,
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 10.0, 0.0, 10.0),
-                                        child: Container(
+                                        child: SizedBox(
                                           width: double.infinity,
                                           child: TextFormField(
                                             controller:
@@ -1305,7 +1302,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                               ),
                                               focusedBorder:
                                                   UnderlineInputBorder(
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Color(0x00000000),
                                                   width: 1.0,
                                                 ),
@@ -1366,18 +1363,18 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 10.0, 10.0, 0.0),
                                   child: Container(
                                     width: double.infinity,
                                     height: 50.0,
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Align(
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
-                                      child: Container(
+                                          const AlignmentDirectional(-1.0, 0.0),
+                                      child: SizedBox(
                                         width: double.infinity,
                                         child: TextFormField(
                                           controller: _model
@@ -1408,7 +1405,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                                   BorderRadius.circular(0.0),
                                             ),
                                             focusedBorder: UnderlineInputBorder(
-                                              borderSide: BorderSide(
+                                              borderSide: const BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
@@ -1470,17 +1467,17 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 1.0),
+                                alignment: const AlignmentDirectional(0.0, 1.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 10.0, 10.0, 0.0),
                                   child: Container(
                                     width: double.infinity,
                                     height: 50.0,
-                                    decoration: BoxDecoration(),
+                                    decoration: const BoxDecoration(),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: Container(
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
+                                      child: SizedBox(
                                         width: double.infinity,
                                         child: TextFormField(
                                           controller:
@@ -1510,7 +1507,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                                   BorderRadius.circular(0.0),
                                             ),
                                             focusedBorder: UnderlineInputBorder(
-                                              borderSide: BorderSide(
+                                              borderSide: const BorderSide(
                                                 color: Color(0x00000000),
                                                 width: 1.0,
                                               ),
@@ -1575,7 +1572,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             30.0, 20.0, 30.0, 20.0),
                         child: FFButtonWidget(
                           onPressed: () async {
@@ -1619,11 +1616,11 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                           options: FFButtonOptions(
                             width: double.infinity,
                             height: 50.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: Color(0xFF77216F),
+                            color: const Color(0xFF77216F),
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
@@ -1633,7 +1630,7 @@ class _AddSitesPageWidgetState extends State<AddSitesPageWidget> {
                                   fontWeight: FontWeight.w600,
                                 ),
                             elevation: 3.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),

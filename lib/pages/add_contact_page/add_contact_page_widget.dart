@@ -4,11 +4,8 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'add_contact_page_model.dart';
 export 'add_contact_page_model.dart';
 
@@ -76,18 +73,18 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
               Container(
                 width: double.infinity,
                 height: 200.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFF77216F),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.smile,
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -96,7 +93,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           'Locators',
                           style:
@@ -112,7 +109,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           'support@locators.co.uk',
                           style:
@@ -131,7 +128,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -146,7 +143,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.houzz,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -167,7 +164,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -182,7 +179,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.people,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -203,7 +200,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -218,7 +215,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.list,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -239,7 +236,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -254,7 +251,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.event_note_rounded,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -279,7 +276,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                 color: FlutterFlowTheme.of(context).alternate,
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
                 child: Text(
                   'Options',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -292,14 +289,14 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                       child: FaIcon(
                         FontAwesomeIcons.solidUserCircle,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -319,14 +316,14 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                       child: Icon(
                         Icons.settings_sharp,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -346,7 +343,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -365,7 +362,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.login_sharp,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -396,7 +393,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.menu_sharp,
               color: Color(0xFF77216F),
               size: 30.0,
@@ -409,7 +406,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -431,7 +428,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 2.0,
         ),
@@ -441,7 +438,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
             child: Container(
               width: double.infinity,
               height: double.infinity,
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
               child: Form(
                 key: _model.formKey,
                 autovalidateMode: AutovalidateMode.disabled,
@@ -451,15 +448,15 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 10.0, 10.0, 0.0),
-                          child: Container(
+                          child: SizedBox(
                             width: double.infinity,
                             height: 50.0,
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: TextFormField(
                                 controller: _model.contactNameTextController,
                                 focusNode: _model.contactNameFocusNode,
@@ -491,7 +488,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                                     borderRadius: BorderRadius.circular(0.0),
                                   ),
                                   focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -540,16 +537,16 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 10.0, 10.0, 0.0),
                           child: Container(
                             width: double.infinity,
                             height: 50.0,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: TextFormField(
                                 controller: _model.companyTextController,
                                 focusNode: _model.companyFocusNode,
@@ -581,7 +578,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                                     borderRadius: BorderRadius.circular(0.0),
                                   ),
                                   focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -629,16 +626,16 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 10.0, 10.0, 0.0),
                           child: Container(
                             width: double.infinity,
                             height: 50.0,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: TextFormField(
                                 controller: _model.positionTextController,
                                 focusNode: _model.positionFocusNode,
@@ -670,7 +667,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                                     borderRadius: BorderRadius.circular(0.0),
                                   ),
                                   focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -719,14 +716,14 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 10.0, 16.0, 10.0),
                         child: SingleChildScrollView(
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 10.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -739,7 +736,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                                       size: 24.0,
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         'Contact Address',
@@ -760,8 +757,8 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(-1.0, -1.0),
-                                child: Container(
+                                alignment: const AlignmentDirectional(-1.0, -1.0),
+                                child: SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
                                     controller:
@@ -795,7 +792,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                                             BorderRadius.circular(0.0),
                                       ),
                                       focusedBorder: UnderlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -842,16 +839,16 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 10.0, 10.0, 0.0),
                           child: Container(
                             width: double.infinity,
                             height: 50.0,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: TextFormField(
                                 controller: _model.phoneNumberTextController,
                                 focusNode: _model.phoneNumberFocusNode,
@@ -883,7 +880,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                                     borderRadius: BorderRadius.circular(0.0),
                                   ),
                                   focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -932,16 +929,16 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 10.0, 10.0, 0.0),
                           child: Container(
                             width: double.infinity,
                             height: 50.0,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: TextFormField(
                                 controller: _model.mobileNumberTextController,
                                 focusNode: _model.mobileNumberFocusNode,
@@ -973,7 +970,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                                     borderRadius: BorderRadius.circular(0.0),
                                   ),
                                   focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -1022,16 +1019,16 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 10.0, 10.0, 0.0),
                           child: Container(
                             width: double.infinity,
                             height: 50.0,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: TextFormField(
                                 controller: _model.emailTextController,
                                 focusNode: _model.emailFocusNode,
@@ -1063,7 +1060,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                                     borderRadius: BorderRadius.circular(0.0),
                                   ),
                                   focusedBorder: UnderlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -1111,7 +1108,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             30.0, 20.0, 30.0, 20.0),
                         child: FFButtonWidget(
                           onPressed: () async {
@@ -1145,11 +1142,11 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                           options: FFButtonOptions(
                             width: double.infinity,
                             height: 50.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: Color(0xFF77216F),
+                            color: const Color(0xFF77216F),
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
@@ -1159,7 +1156,7 @@ class _AddContactPageWidgetState extends State<AddContactPageWidget> {
                                   fontWeight: FontWeight.w600,
                                 ),
                             elevation: 3.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),

@@ -4,11 +4,8 @@ import '/components/add_sites_menu_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'sites_page_model.dart';
 export 'sites_page_model.dart';
 
@@ -53,7 +50,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
           onPressed: () async {
             context.pushNamed('add_sites_page');
           },
-          backgroundColor: Color(0xFF77216F),
+          backgroundColor: const Color(0xFF77216F),
           elevation: 8.0,
           child: Icon(
             Icons.add,
@@ -70,18 +67,18 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
               Container(
                 width: double.infinity,
                 height: 200.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFF77216F),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.smile,
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -90,7 +87,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           'Locators',
                           style:
@@ -106,7 +103,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           'support@locators.co.uk',
                           style:
@@ -125,7 +122,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -140,7 +137,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.houzz,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -161,7 +158,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -176,7 +173,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.people,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -197,7 +194,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -212,7 +209,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.list,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -233,7 +230,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -248,7 +245,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.event_note_rounded,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -273,7 +270,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                 color: FlutterFlowTheme.of(context).alternate,
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
                 child: Text(
                   'Options',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -286,14 +283,14 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                       child: FaIcon(
                         FontAwesomeIcons.solidUserCircle,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -313,14 +310,14 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                       child: Icon(
                         Icons.settings_sharp,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -340,7 +337,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -359,7 +356,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.login_sharp,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -390,7 +387,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.menu_sharp,
               color: Color(0xFF77216F),
               size: 30.0,
@@ -403,7 +400,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 5.0, 0.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
@@ -425,7 +422,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 2.0,
         ),
@@ -438,7 +435,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
               color: FlutterFlowTheme.of(context).secondaryBackground,
             ),
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
               child: SingleChildScrollView(
                 primary: false,
                 child: Column(
@@ -446,16 +443,16 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                       child: Container(
                         width: double.infinity,
                         height: 50.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFF77216F),
+                          color: const Color(0xFF77216F),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 10.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -475,7 +472,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                                           elevation: 0,
                                           insetPadding: EdgeInsets.zero,
                                           backgroundColor: Colors.transparent,
-                                          alignment: AlignmentDirectional(
+                                          alignment: const AlignmentDirectional(
                                                   0.0, 0.0)
                                               .resolve(
                                                   Directionality.of(context)),
@@ -483,7 +480,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                                             onTap: () =>
                                                 FocusScope.of(dialogContext)
                                                     .unfocus(),
-                                            child: Container(
+                                            child: const SizedBox(
                                               height: 450.0,
                                               width: 350.0,
                                               child: AddSitesMenuWidget(),
@@ -503,9 +500,9 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                               ),
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 3.0, 8.0, 3.0),
-                                  child: Container(
+                                  child: SizedBox(
                                     width: 250.0,
                                     child: TextFormField(
                                       controller: _model.textController,
@@ -565,10 +562,10 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                                         filled: true,
                                         fillColor: FlutterFlowTheme.of(context)
                                             .primaryBackground,
-                                        prefixIcon: Icon(
+                                        prefixIcon: const Icon(
                                           Icons.search_sharp,
                                         ),
-                                        suffixIcon: Icon(
+                                        suffixIcon: const Icon(
                                           Icons.groups_sharp,
                                         ),
                                       ),
@@ -597,7 +594,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
@@ -633,7 +630,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                                 final listViewSitesRecord =
                                     listViewSitesRecordList[listViewIndex];
                                 return Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 10.0, 0.0, 0.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -664,14 +661,14 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                                             BorderRadius.circular(8.0),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             5.0, 10.0, 5.0, 10.0),
                                         child: Container(
                                           width: double.infinity,
                                           height: 80.0,
-                                          decoration: BoxDecoration(),
+                                          decoration: const BoxDecoration(),
                                           child: Padding(
-                                            padding: EdgeInsets.all(5.0),
+                                            padding: const EdgeInsets.all(5.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
@@ -724,7 +721,7 @@ class _SitesPageWidgetState extends State<SitesPageWidget> {
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           1.0, 1.0),
                                                   child: Icon(
                                                     Icons

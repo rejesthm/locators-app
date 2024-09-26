@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'open_module_model.dart';
 export 'open_module_model.dart';
 
@@ -46,7 +43,7 @@ class _OpenModuleWidgetState extends State<OpenModuleWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(10.0),
       child: Container(
         width: double.infinity,
         height: 300.0,
@@ -54,7 +51,7 @@ class _OpenModuleWidgetState extends State<OpenModuleWidget> {
           color: FlutterFlowTheme.of(context).secondaryBackground,
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -64,7 +61,7 @@ class _OpenModuleWidgetState extends State<OpenModuleWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 20.0, 10.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 20.0, 10.0),
                     child: Icon(
                       Icons.smartphone_outlined,
                       color: FlutterFlowTheme.of(context).primaryText,
@@ -73,7 +70,7 @@ class _OpenModuleWidgetState extends State<OpenModuleWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
                     child: Text(
                       'Open Module?',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -87,7 +84,7 @@ class _OpenModuleWidgetState extends State<OpenModuleWidget> {
                 ],
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                 child: Text(
                   'Created by David Scammell on Web Jun 19 14:30:58 GMT+01:00 2024',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -98,14 +95,14 @@ class _OpenModuleWidgetState extends State<OpenModuleWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 35.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 35.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -119,7 +116,7 @@ class _OpenModuleWidgetState extends State<OpenModuleWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Inter',
-                                    color: Color(0xFF9F2756),
+                                    color: const Color(0xFF9F2756),
                                     fontSize: 18.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,

@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'select_quote_item_product_type_model.dart';
 export 'select_quote_item_product_type_model.dart';
 
@@ -49,7 +47,7 @@ class _SelectQuoteItemProductTypeWidgetState
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(24.0),
+      padding: const EdgeInsets.all(24.0),
       child: Container(
         width: double.infinity,
         height: 650.0,
@@ -57,7 +55,7 @@ class _SelectQuoteItemProductTypeWidgetState
           color: FlutterFlowTheme.of(context).secondaryBackground,
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
           child: SingleChildScrollView(
             primary: false,
             child: Column(
@@ -65,7 +63,7 @@ class _SelectQuoteItemProductTypeWidgetState
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(1.0, 10.0, 0.0, 10.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(1.0, 10.0, 0.0, 10.0),
                   child: Text(
                     'Select Quote Item Product Type',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -77,7 +75,7 @@ class _SelectQuoteItemProductTypeWidgetState
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: FlutterFlowRadioButton(
                     options: [
                       'Scissor lift',
@@ -125,7 +123,7 @@ class _SelectQuoteItemProductTypeWidgetState
                             ),
                     buttonPosition: RadioButtonPosition.left,
                     direction: Axis.vertical,
-                    radioButtonColor: Color(0xFF9F2756),
+                    radioButtonColor: const Color(0xFF9F2756),
                     inactiveRadioButtonColor:
                         FlutterFlowTheme.of(context).secondaryText,
                     toggleable: false,
@@ -134,14 +132,14 @@ class _SelectQuoteItemProductTypeWidgetState
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 35.0, 0.0, 20.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 35.0, 0.0, 20.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -156,7 +154,7 @@ class _SelectQuoteItemProductTypeWidgetState
                                 .bodyMedium
                                 .override(
                                   fontFamily: 'Inter',
-                                  color: Color(0xFF9F2756),
+                                  color: const Color(0xFF9F2756),
                                   fontSize: 18.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w600,
@@ -179,7 +177,7 @@ class _SelectQuoteItemProductTypeWidgetState
                                       FlutterFlowTheme.of(context).primaryText,
                                 ),
                               ),
-                              duration: Duration(milliseconds: 4000),
+                              duration: const Duration(milliseconds: 4000),
                               backgroundColor:
                                   FlutterFlowTheme.of(context).secondary,
                             ),

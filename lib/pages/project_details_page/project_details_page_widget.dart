@@ -4,12 +4,9 @@ import '/components/add_project_item_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'project_details_page_model.dart';
 export 'project_details_page_model.dart';
 
@@ -63,19 +60,19 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                     elevation: 0,
                     insetPadding: EdgeInsets.zero,
                     backgroundColor: Colors.transparent,
-                    alignment: AlignmentDirectional(0.0, 0.0)
+                    alignment: const AlignmentDirectional(0.0, 0.0)
                         .resolve(Directionality.of(context)),
                     child: GestureDetector(
                       onTap: () => FocusScope.of(dialogContext).unfocus(),
                       child: AddProjectItemWidget(
-                        titlevalue: widget!.projectDetails?.projectTitle,
+                        titlevalue: widget.projectDetails?.projectTitle,
                       ),
                     ),
                   );
                 },
               );
             },
-            backgroundColor: Color(0xFF77216F),
+            backgroundColor: const Color(0xFF77216F),
             elevation: 8.0,
             child: Icon(
               Icons.add,
@@ -93,18 +90,18 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
               Container(
                 width: double.infinity,
                 height: 200.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFF77216F),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.smile,
                           color: FlutterFlowTheme.of(context).primaryText,
@@ -113,7 +110,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           'Locators',
                           style:
@@ -129,7 +126,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                         child: Text(
                           'support@locators.co.uk',
                           style:
@@ -148,7 +145,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -163,7 +160,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: FaIcon(
                           FontAwesomeIcons.houzz,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -184,7 +181,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -199,7 +196,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.people,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -220,7 +217,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -235,7 +232,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.list,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -256,7 +253,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -271,7 +268,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.event_note_rounded,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -296,7 +293,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                 color: FlutterFlowTheme.of(context).alternate,
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
                 child: Text(
                   'Options',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -309,14 +306,14 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                       child: FaIcon(
                         FontAwesomeIcons.solidUserCircle,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -336,14 +333,14 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                       child: Icon(
                         Icons.settings_sharp,
                         color: FlutterFlowTheme.of(context).secondaryText,
@@ -363,7 +360,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -382,7 +379,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 24.0, 0.0),
                         child: Icon(
                           Icons.login_sharp,
                           color: FlutterFlowTheme.of(context).secondaryText,
@@ -413,7 +410,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.menu_sharp,
               color: Color(0xFF77216F),
               size: 30.0,
@@ -432,7 +429,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 5.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(50.0, 0.0, 5.0, 0.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
                       child: Image.asset(
@@ -454,7 +451,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                   ),
                 ],
               ),
-              Align(
+              const Align(
                 alignment: AlignmentDirectional(1.0, 0.0),
                 child: Icon(
                   Icons.more_vert,
@@ -464,7 +461,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
               ),
             ],
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 2.0,
         ),
@@ -474,14 +471,14 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
             child: Container(
               width: double.infinity,
               height: double.infinity,
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
               child: SingleChildScrollView(
                 primary: false,
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Padding(
-                      padding: EdgeInsets.all(10.0),
+                      padding: const EdgeInsets.all(10.0),
                       child: Container(
                         width: double.infinity,
                         height: 50.0,
@@ -489,14 +486,14 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
                           border: Border.all(
-                            color: Color(0xFF77216F),
+                            color: const Color(0xFF77216F),
                             width: 2.0,
                           ),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Text(
-                            widget!.projectDetails!.projectTitle,
+                            widget.projectDetails!.projectTitle,
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -511,9 +508,9 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 35.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 35.0),
                       child: Text(
-                        widget!.projectDetails!.projectDescription,
+                        widget.projectDetails!.projectDescription,
                         style: FlutterFlowTheme.of(context)
                             .headlineMedium
                             .override(
@@ -531,7 +528,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 10.0, 0.0, 10.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -581,7 +578,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                         queryBuilder: (businessModulesRecord) =>
                                             businessModulesRecord.where(
                                           'projectReference',
-                                          isEqualTo: widget!
+                                          isEqualTo: widget
                                               .projectDetails?.projectReference,
                                         ),
                                       ),
@@ -620,7 +617,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                                 listViewBusinessModulesRecordList[
                                                     listViewIndex];
                                             return Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       5.0, 10.0, 5.0, 10.0),
                                               child: InkWell(
@@ -635,7 +632,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                                     queryParameters: {
                                                       'projectReference':
                                                           serializeParam(
-                                                        widget!.projectDetails
+                                                        widget.projectDetails
                                                             ?.projectReference,
                                                         ParamType.String,
                                                       ),
@@ -670,7 +667,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -683,7 +680,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                                                 BoxDecoration(
                                                               border:
                                                                   Border.all(
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF77216F),
                                                                 width: 2.0,
                                                               ),
@@ -701,7 +698,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                                         Expanded(
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: AutoSizeText(
                                                               listViewBusinessModulesRecord
@@ -740,7 +737,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.all(10.0),
+                            padding: const EdgeInsets.all(10.0),
                             child: Container(
                               width: double.infinity,
                               height: 230.0,
@@ -758,7 +755,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 10.0, 0.0, 10.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -769,7 +766,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, -1.0),
+                                                const AlignmentDirectional(0.0, -1.0),
                                             child: FaIcon(
                                               FontAwesomeIcons.houzz,
                                               color:
@@ -780,7 +777,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               'Sites',
@@ -837,7 +834,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                                 listViewSitesRecordList[
                                                     listViewIndex];
                                             return Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(5.0, 0.0, 5.0, 5.0),
                                               child: Card(
                                                 clipBehavior:
@@ -861,7 +858,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Row(
@@ -902,7 +899,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     -1.0, 0.0),
                                                             child: Text(
                                                               listViewSitesRecord
@@ -937,7 +934,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.all(10.0),
+                            padding: const EdgeInsets.all(10.0),
                             child: Container(
                               width: double.infinity,
                               height: 200.0,
@@ -955,7 +952,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 10.0, 0.0, 10.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -966,7 +963,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, -1.0),
+                                                const AlignmentDirectional(0.0, -1.0),
                                             child: Icon(
                                               Icons.people,
                                               color:
@@ -977,7 +974,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               'Contacts',
@@ -1034,7 +1031,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                                 listViewContactsRecordList[
                                                     listViewIndex];
                                             return Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(5.0, 0.0, 5.0, 5.0),
                                               child: Card(
                                                 clipBehavior:
@@ -1058,7 +1055,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Row(
@@ -1099,7 +1096,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
                                                               listViewContactsRecord
@@ -1134,7 +1131,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.all(10.0),
+                            padding: const EdgeInsets.all(10.0),
                             child: Container(
                               width: double.infinity,
                               height: 230.0,
@@ -1152,7 +1149,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 10.0, 0.0, 10.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -1163,7 +1160,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, -1.0),
+                                                const AlignmentDirectional(0.0, -1.0),
                                             child: Icon(
                                               Icons.event_note_rounded,
                                               color:
@@ -1174,7 +1171,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               'Task',
@@ -1231,7 +1228,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                                 listViewTasksRecordList[
                                                     listViewIndex];
                                             return Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(5.0, 0.0, 5.0, 5.0),
                                               child: Card(
                                                 clipBehavior:
@@ -1255,7 +1252,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                                   ),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(10.0, 0.0,
                                                                 10.0, 0.0),
                                                     child: Row(
@@ -1296,7 +1293,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
                                                               listViewTasksRecord
@@ -1331,7 +1328,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.all(10.0),
+                            padding: const EdgeInsets.all(10.0),
                             child: Container(
                               width: double.infinity,
                               height: 230.0,
@@ -1349,7 +1346,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 10.0, 0.0, 10.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -1360,7 +1357,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, -1.0),
+                                                const AlignmentDirectional(0.0, -1.0),
                                             child: Icon(
                                               Icons.note,
                                               color:
@@ -1371,7 +1368,7 @@ class _ProjectDetailsPageWidgetState extends State<ProjectDetailsPageWidget> {
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     10.0, 0.0, 0.0, 0.0),
                                             child: Text(
                                               'Notes',

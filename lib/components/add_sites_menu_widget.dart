@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'add_sites_menu_model.dart';
 export 'add_sites_menu_model.dart';
 
@@ -42,20 +40,20 @@ class _AddSitesMenuWidgetState extends State<AddSitesMenuWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(10.0),
       child: Container(
         width: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
                 child: Text(
                   'Order By',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -67,7 +65,7 @@ class _AddSitesMenuWidgetState extends State<AddSitesMenuWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                 child: FlutterFlowRadioButton(
                   options: [
                     'Data Created',
@@ -94,7 +92,7 @@ class _AddSitesMenuWidgetState extends State<AddSitesMenuWidget> {
                           ),
                   buttonPosition: RadioButtonPosition.left,
                   direction: Axis.vertical,
-                  radioButtonColor: Color(0xFF9F2756),
+                  radioButtonColor: const Color(0xFF9F2756),
                   inactiveRadioButtonColor:
                       FlutterFlowTheme.of(context).secondaryText,
                   toggleable: false,
@@ -103,14 +101,14 @@ class _AddSitesMenuWidgetState extends State<AddSitesMenuWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 35.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 35.0, 0.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -124,7 +122,7 @@ class _AddSitesMenuWidgetState extends State<AddSitesMenuWidget> {
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Inter',
-                                    color: Color(0xFF9F2756),
+                                    color: const Color(0xFF9F2756),
                                     fontSize: 18.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,

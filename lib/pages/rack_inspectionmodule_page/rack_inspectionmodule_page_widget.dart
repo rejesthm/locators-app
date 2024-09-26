@@ -1,13 +1,11 @@
 import '/backend/backend.dart';
-import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'rack_inspectionmodule_page_model.dart';
 export 'rack_inspectionmodule_page_model.dart';
 
@@ -51,7 +49,7 @@ class _RackInspectionmodulePageWidgetState
       stream: queryBusinessModulesRecord(
         queryBuilder: (businessModulesRecord) => businessModulesRecord.where(
           'projectReference',
-          isEqualTo: widget!.projectReference,
+          isEqualTo: widget.projectReference,
         ),
         singleRecord: true,
       ),
@@ -92,12 +90,12 @@ class _RackInspectionmodulePageWidgetState
             drawer: Drawer(
               elevation: 16.0,
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(24.0, 40.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 40.0, 0.0, 0.0),
                 child: Builder(
                   builder: (context) {
                     final cardTitle =
                         rackInspectionmodulePageBusinessModulesRecord?.cards
-                                ?.toList() ??
+                                .toList() ??
                             [];
 
                     return ListView.builder(
@@ -108,7 +106,7 @@ class _RackInspectionmodulePageWidgetState
                       itemBuilder: (context, cardTitleIndex) {
                         final cardTitleItem = cardTitle[cardTitleIndex];
                         return Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 15.0, 0.0, 15.0),
                           child: Text(
                             cardTitleItem.cardTitle,
@@ -136,7 +134,7 @@ class _RackInspectionmodulePageWidgetState
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 60.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.menu_sharp,
                   color: Color(0xFF77216F),
                   size: 30.0,
@@ -151,10 +149,10 @@ class _RackInspectionmodulePageWidgetState
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(0.0, -1.0),
+                    alignment: const AlignmentDirectional(0.0, -1.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.asset(
@@ -193,7 +191,7 @@ class _RackInspectionmodulePageWidgetState
                       ),
                     ],
                   ),
-                  Padding(
+                  const Padding(
                     padding:
                         EdgeInsetsDirectional.fromSTEB(10.0, 16.0, 0.0, 0.0),
                     child: Icon(
@@ -204,7 +202,7 @@ class _RackInspectionmodulePageWidgetState
                   ),
                 ],
               ),
-              actions: [],
+              actions: const [],
               centerTitle: true,
               elevation: 2.0,
             ),
@@ -222,21 +220,25 @@ class _RackInspectionmodulePageWidgetState
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 30.0, 0.0, 30.0),
                         child: FFButtonWidget(
-                          onPressed: () {
-                            print('Button pressed ...');
+                          onPressed: () async {
+                            await actions.generateRackInspectionPDF(
+                              rackInspectionmodulePageBusinessModulesRecord!
+                                  .cards
+                                  .toList(),
+                            );
                           },
                           text: 'Create PDF',
                           options: FFButtonOptions(
                             width: 200.0,
                             height: 40.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: Color(0xFF77216F),
+                            color: const Color(0xFF77216F),
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
@@ -252,7 +254,7 @@ class _RackInspectionmodulePageWidgetState
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                         child: Text(
                           valueOrDefault<String>(
                             rackInspectionmodulePageBusinessModulesRecord
@@ -273,9 +275,9 @@ class _RackInspectionmodulePageWidgetState
                           final cards =
                               rackInspectionmodulePageBusinessModulesRecord
                                       ?.cards
-                                      ?.map((e) => e)
+                                      .map((e) => e)
                                       .toList()
-                                      ?.toList() ??
+                                      .toList() ??
                                   [];
 
                           return ListView.builder(
@@ -286,7 +288,7 @@ class _RackInspectionmodulePageWidgetState
                             itemBuilder: (context, cardsIndex) {
                               final cardsItem = cards[cardsIndex];
                               return Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     10.0, 0.0, 10.0, 0.0),
                                 child: Card(
                                   clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -297,7 +299,7 @@ class _RackInspectionmodulePageWidgetState
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         10.0, 10.0, 10.0, 10.0),
                                     child: Container(
                                       width: double.infinity,
@@ -323,7 +325,7 @@ class _RackInspectionmodulePageWidgetState
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                           ),
-                                          Divider(
+                                          const Divider(
                                             thickness: 2.0,
                                             color: Color(0xFF93A6A7),
                                           ),
@@ -341,21 +343,21 @@ class _RackInspectionmodulePageWidgetState
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       24.0, 10.0, 0.0, 0.0),
                                               child: Container(
                                                 width: double.infinity,
                                                 height: 20.0,
-                                                decoration: BoxDecoration(),
+                                                decoration: const BoxDecoration(),
                                                 child: Visibility(
                                                   visible: cardsItem.cardType ==
                                                       'RackInspectionSimpleProgressCard',
                                                   child: Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child:
                                                         LinearPercentIndicator(
@@ -366,9 +368,9 @@ class _RackInspectionmodulePageWidgetState
                                                       animateFromLastPercent:
                                                           true,
                                                       progressColor:
-                                                          Color(0xFFB526A8),
+                                                          const Color(0xFFB526A8),
                                                       backgroundColor:
-                                                          Color(0xFFABABAC),
+                                                          const Color(0xFFABABAC),
                                                       padding: EdgeInsets.zero,
                                                     ),
                                                   ),
